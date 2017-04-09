@@ -27,8 +27,8 @@ func main() {
 
 	close(input)
 
-	for i:=1; i<=100; i++{
-		fmt.Println(<-output)
+	for i := range output {
+		fmt.Println(i)
 	}
 }
 
